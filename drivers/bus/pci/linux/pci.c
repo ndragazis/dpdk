@@ -347,8 +347,8 @@ pci_scan_one(const char *dirname, const struct rte_pci_addr *addr)
 				dev2->kdrv = dev->kdrv;
 				dev2->max_vfs = dev->max_vfs;
 				pci_name_set(dev2);
-				memmove(dev2->mem_resource, dev->mem_resource,
-					sizeof(dev->mem_resource));
+				//memmove(dev2->mem_resource, dev->mem_resource,
+				//	sizeof(dev->mem_resource));
 				free(dev);
 			}
 			return 0;
